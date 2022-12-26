@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/whiteHealth"
-    tools:context=".RoomActivity">
+    tools:context=".RoomActivity"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +17,8 @@
         android:background="@drawable/rounded_bg"
         android:elevation="10dp"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        >
 
         <TextView
             android:id="@+id/fullname"
@@ -27,6 +29,7 @@
             android:layout_marginBottom="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="30dp"
+            android:fontFamily="@font/poppins"
             />
 
         <TextView
@@ -39,6 +42,7 @@
             android:layout_marginBottom="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="30dp"
+            android:fontFamily="@font/poppins"
             />
 
         <TextView
@@ -51,6 +55,7 @@
             android:layout_marginBottom="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="30dp"
+            android:fontFamily="@font/poppins"
             />
 
         <TextView
@@ -63,6 +68,7 @@
             android:layout_marginBottom="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="50dp"
+            android:fontFamily="@font/poppins"
             />
 
         <TextView
@@ -75,6 +81,7 @@
             android:layout_marginBottom="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="30dp"
+            android:fontFamily="@font/poppins"
             />
 
         <TextView
@@ -87,6 +94,7 @@
             android:layout_marginBottom="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="30dp"
+            android:fontFamily="@font/poppins"
             />
     </LinearLayout>
 
@@ -95,10 +103,10 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:text="@string/reserve"
-        android:background="@color/blueHealth"
+        android:background="@drawable/rounded_bg_blue"
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
-
+        android:fontFamily="@font/poppins"
         />
 
 

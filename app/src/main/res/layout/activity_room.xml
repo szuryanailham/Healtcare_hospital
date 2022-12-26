@@ -7,7 +7,8 @@
     android:orientation="horizontal"
     android:background="@color/whiteHealth"
     android:padding="20sp"
-    tools:context=".RoomActivity">
+    tools:context=".RoomActivity"
+    >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -17,7 +18,8 @@
         android:background="@drawable/rounded_bg"
         android:elevation="10dp"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        >
 
         <TextView
             android:id="@+id/nama_kamar"
@@ -25,7 +27,9 @@
             android:layout_height="wrap_content"
             android:text="Kamar Kelas VIP"
             android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            />
 
         <TextView
             android:id="@+id/fitur_kamar"
@@ -33,6 +37,7 @@
             android:layout_height="wrap_content"
             android:text="AC, Kamar mandi dalam, 1 Tempat tidur, 1 Lemari pasien, Dispenser, TV, Telphon"
             android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
             />
     </LinearLayout>
 
