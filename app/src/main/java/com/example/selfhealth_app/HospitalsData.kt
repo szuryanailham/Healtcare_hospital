@@ -25,13 +25,6 @@ object HospitalsData {
         "Yogyakarta, DI Yogyakarta",
     )
 
-    private val hospitalsImages = intArrayOf(
-        R.drawable.sardjito,
-        R.drawable.pku,
-        R.drawable.pantirapih,
-        R.drawable.rsudyogya,
-        R.drawable.bethesda
-    )
 
     val listData: ArrayList<Hospitals>
         get() {
@@ -40,7 +33,7 @@ object HospitalsData {
                 val hospitals = Hospitals()
                 hospitals.name = hospitalNames[position]
                 hospitals.detail = hospitalDetails[position]
-                hospitals.photo = hospitalsImages[position]
+                hospitals.city = hospitalCity[position]
                 list.add(hospitals)
             }
             return list

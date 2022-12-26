@@ -46,7 +46,7 @@
         android:textSize="15sp"
         android:textColor="@color/black"
         android:textColorHint="@color/darkHealth"
-        android:background="@drawable/rounded_bg"
+        android:background="@drawable/rounded_bg_gray"
         android:fontFamily="@font/poppins"/>
 
     <EditText
@@ -60,7 +60,7 @@
         android:textSize="15sp"
         android:textColor="@color/black"
         android:textColorHint="@color/darkHealth"
-        android:background="@drawable/rounded_bg"
+        android:background="@drawable/rounded_bg_gray"
         android:fontFamily="@font/poppins" />
 
     <Button
