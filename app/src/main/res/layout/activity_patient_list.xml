@@ -111,10 +111,9 @@
         android:layout_height="50dp"
         android:elevation="10dp"
         android:text="@string/reserve"
-        android:background="@color/blueHealth"
+        android:background="@drawable/rounded_bg_blue"
         android:layout_marginTop="25dp"
         android:layout_gravity="center"
-
         />
 
 
