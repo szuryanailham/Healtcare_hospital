@@ -1,37 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:padding="20dp"
-    android:background="@color/white">
+    android:gravity="center_vertical"
+    android:padding="25dp"
+    android:background="@color/whiteHealth"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/login_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to SelfHealth!"
+        android:textColor="@color/darkHealth"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_the_best_healthcare"
+        android:textColor="@color/darkHealth"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="70dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins"/>
 
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/example_gmail"
+        android:paddingHorizontal="20dp"
+        android:textSize="15sp"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:textColorHint="@color/darkHealth"
+        android:background="@drawable/rounded_bg"
+        android:fontFamily="@font/poppins"/>
 
     <EditText
         android:id="@+id/editPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:textColorHint="@color/black"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/password"
         android:inputType="textPassword"
+        android:paddingHorizontal="20dp"
+        android:textSize="15sp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/editEmail"/>
-    
+        android:textColorHint="@color/darkHealth"
+        android:background="@drawable/rounded_bg"
+        android:fontFamily="@font/poppins" />
+
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        app:layout_constraintTop_toBottomOf="@id/editPassword"/>
+        android:layout_height="55dp"
+        android:background="@drawable/rounded_bg_blue"
+        android:text="@string/login"
+        android:textColor="@color/whiteHealth"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_medium"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@color/blueHealth"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_an_account"
+            android:textColor="@color/darkHealth"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:paddingStart="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/blueHealth"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+</LinearLayout>

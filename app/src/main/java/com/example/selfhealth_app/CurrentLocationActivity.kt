@@ -42,7 +42,7 @@ class CurrentLocationActivity : AppCompatActivity() {
             if (it != null) {
                 Toast.makeText(applicationContext, "${it.latitude} ${it.longitude}", Toast.LENGTH_SHORT).show()
             }
-            setContentView(R.layout.activity_main)
+            setContentView(R.layout.activity_user)
         }
     }
 }
