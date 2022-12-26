@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">selfHealth-app</string>
+    <string name="hospital_name">Nama Rumah Sakit</string>
+    <string name="detail">Detail</string>
 </resources>

@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/whiteHealth"
+    android:padding="20sp"
     tools:context=".PatientActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
