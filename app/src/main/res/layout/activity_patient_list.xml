@@ -1,13 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
     android:orientation="vertical"
     android:background="@color/whiteHealth"
-    android:padding="20sp"
-    tools:context=".PatientActivity">
+    tools:context=".RoomActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_bg"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/fullname"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkHealth"
+            android:background="@drawable/rounded_bg_gray"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/dob"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkHealth"
+            android:background="@drawable/rounded_bg_gray"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/gender"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkHealth"
+            android:background="@drawable/rounded_bg_gray"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/address"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkHealth"
+            android:background="@drawable/rounded_bg_gray"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/address"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkHealth"
+            android:background="@drawable/rounded_bg_gray"
+            android:fontFamily="@font/poppins"/>
+
+        <TextView
+            android:id="@+id/room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected room"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnreserve"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Reserve"
+        android:background="@color/blueHealth"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+
+        />
+
+
+
+</LinearLayout>
