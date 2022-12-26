@@ -4,7 +4,9 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:background="@drawable/rounded_bg"
+    android:padding="16dp"
+    android:layout_margin="25dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_hospital"
