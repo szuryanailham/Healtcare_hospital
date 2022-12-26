@@ -1,62 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".RoomActivity">
 
-
-
-    <RadioGroup
-        android:id="@+id/radiogrup"
+    <TextView
+        android:id="@+id/roomvip"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="Kamar Kelas VIP"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        />
 
-        <TextView
-            android:layout_width="412dp"
-            android:layout_height="30dp"
-            android:text="Please choose your Room"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/room1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kamar Kelas 1"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/room2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kamar Kelas 2"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
 
-        <RadioButton
-            android:id="@+id/rdb1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:text="Kelas VIP"
-            android:textColor="@color/black"/>
 
-        <RadioButton
-            android:id="@+id/rdb2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:text="Kelas 1"
-            android:textColor="@color/black"/>
 
-        <RadioButton
-            android:id="@+id/rdb3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:text="Kelas 2"
-            android:textColor="@color/black"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Order"
-            android:background="@color/blueHealth"
-            android:onClick=""/>
-
-    </RadioGroup>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
