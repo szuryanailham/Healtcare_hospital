@@ -10,26 +10,5 @@ class RoomActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room)
     }
-    fun onRadioButtonClicked(view: ) {
-        if (view is RadioButton) {
-            // Is the button now checked?
-            val checked = view.isChecked
 
-            // Check which radio button was clicked
-            when (view.getId()) {
-                R.id.rdb1 ->
-                    if (checked) {
-
-                    }
-                R.id.rdb2 ->
-                    if (checked) {
-
-                    }
-                R.id.rdb3 ->
-                    if (checked) {
-
-                    }
-            }
-        }
-    }
 }

@@ -7,39 +7,22 @@
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:background="@color/white"
+    android:padding="20sp"
     tools:context=".RoomActivity">
 
     <TextView
-        android:id="@+id/roomvip"
+        android:id="@+id/nama_kamar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kamar Kelas VIP"
         android:textColor="@color/black"
-        android:layout_marginBottom="50dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        />
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/room1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kamar Kelas 1"
-        android:textColor="@color/black"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        />
-    <TextView
-        android:id="@+id/room2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kamar Kelas 2"
-        android:textColor="@color/black"
-        android:layout_marginTop="50dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"/>
+        android:text="AC, Kamar mandi dalam .."
+        android:textColor="@color/black" />
 
 
 
