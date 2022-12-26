@@ -13,7 +13,7 @@ class HospitalAdapter(val listHospitals: ArrayList<Hospitals>) : RecyclerView.Ad
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tvName: TextView = itemView.findViewById(R.id.tv_name)
         var tvDetail: TextView = itemView.findViewById(R.id.tv_detail)
-        var imgPhoto: ImageView = itemView.findViewById(R.id.img_hospital)
+        var tvCity: TextView = itemView.findViewById(R.id.tv_city)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
@@ -27,12 +27,9 @@ class HospitalAdapter(val listHospitals: ArrayList<Hospitals>) : RecyclerView.Ad
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val hospital = listHospitals[position]
-        Glide.with(holder.itemView.context)
-            .load(hospital.photo)
-            .apply(RequestOptions().override(55, 55))
-            .into(holder.imgPhoto)
         holder.tvName.text = hospital.name
         holder.tvDetail.text = hospital.detail
+        holder.tvCity.text = hospital.city
     }
 
 }
