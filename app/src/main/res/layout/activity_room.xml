@@ -17,8 +17,7 @@
         android:background="@drawable/rounded_bg"
         android:elevation="10dp"
         android:orientation="vertical"
-        android:padding="16dp"
-        >
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/nama_kamar"
