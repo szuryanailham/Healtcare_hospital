@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">selfHealth-app</string>
+
+    <string name="app_name">Self Health</string>
+    <string name="example_gmail">example@gmail.com</string>
+    <string name="password">********</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register">Register</string>
+    <string name="get_the_best_healthcare">Get the best healthcare</string>
     <string name="hospital_name">Nama Rumah Sakit</string>
     <string name="detail">Detail</string>
 </resources>
