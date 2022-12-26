@@ -5,80 +5,90 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/whiteHealth"
     tools:context=".RoomActivity">
 
-    <TextView
-        android:id="@+id/fullname"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nama Lengkap"
-        android:textColor="@color/black"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="30dp"
-        />
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_bg"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/born"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tempat Tanggal Lahir"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="30dp"
-        />
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp"
+            />
 
-    <TextView
-        android:id="@+id/gender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Jenis Kelamin"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="30dp"
-        />
+        <TextView
+            android:id="@+id/born"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birth of date"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp"
+            />
 
-    <TextView
-        android:id="@+id/addres"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Alamat"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="30dp"
-        />
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp"
+            />
 
-    <TextView
-        android:id="@+id/compline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Keluhan yang diderita"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="30dp"
-        />
+        <TextView
+            android:id="@+id/addres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Addres"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="50dp"
+            />
 
-    <TextView
-        android:id="@+id/room"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kamar yang dipilih"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="30dp"
-        />
+        <TextView
+            android:id="@+id/compline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compline"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp"
+            />
+
+        <TextView
+            android:id="@+id/room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected room"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp"
+            />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnreserve"

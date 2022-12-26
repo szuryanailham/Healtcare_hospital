@@ -4,25 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
-    android:orientation="vertical"
-    android:background="@color/white"
+    android:orientation="horizontal"
+    android:background="@color/whiteHealth"
     android:padding="20sp"
     tools:context=".RoomActivity">
 
-    <TextView
-        android:id="@+id/nama_kamar"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kamar Kelas VIP"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_bg"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="AC, Kamar mandi dalam .."
-        android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/nama_kamar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamar Kelas VIP"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fitur_kamar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AC, Kamar mandi dalam, 1 Tempat tidur, 1 Lemari pasien, Dispenser, TV, Telphon"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
 
 
 
