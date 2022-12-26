@@ -75,12 +75,12 @@
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/address"
+            android:id="@+id/complaint"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:hint="@string/address"
+            android:hint="@string/complaint"
             android:paddingHorizontal="20dp"
             android:textSize="15sp"
             android:textColor="@color/black"
@@ -88,17 +88,20 @@
             android:background="@drawable/rounded_bg_gray"
             android:fontFamily="@font/poppins"/>
 
-        <TextView
+        <EditText
             android:id="@+id/room"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Selected room"
-            android:textColor="@color/black"
-            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="30dp"
-            />
+            android:hint="@string/room"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkHealth"
+            android:background="@drawable/rounded_bg_gray"
+            android:fontFamily="@font/poppins"/>
+
     </LinearLayout>
 
     <Button

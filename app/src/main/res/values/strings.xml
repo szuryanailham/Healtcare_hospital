@@ -11,8 +11,8 @@
     <string name="dob">Date of Birth</string>
     <string name="gender">Gender</string>
     <string name="address">Address</string>
-    <string name="fullname">Full Name</string>
-    <string name="fullname">Full Name</string>
+    <string name="complaint">Patient Complaint</string>
+    <string name="room">Selected Room</string>
     <string name="get_the_best_healthcare">Get the best healthcare</string>
     <string name="hospital_name">Nama Rumah Sakit</string>
     <string name="detail">Alamat</string>
