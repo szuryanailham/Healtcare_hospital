@@ -13,6 +13,7 @@ class HospitalAdapter(val listHospitals: ArrayList<Hospitals>) : RecyclerView.Ad
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tvName: TextView = itemView.findViewById(R.id.tv_name)
         var tvDetail: TextView = itemView.findViewById(R.id.tv_detail)
+        var tvCity: TextView = itemView.findViewById(R.id.tv_city)
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_hospital)
     }
 
@@ -33,6 +34,7 @@ class HospitalAdapter(val listHospitals: ArrayList<Hospitals>) : RecyclerView.Ad
             .into(holder.imgPhoto)
         holder.tvName.text = hospital.name
         holder.tvDetail.text = hospital.detail
+        holder.tvCity.text = hospital.city
     }
 
 }
