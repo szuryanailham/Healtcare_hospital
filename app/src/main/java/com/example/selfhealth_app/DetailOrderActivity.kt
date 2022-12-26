@@ -9,4 +9,5 @@ class DetailOrderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_order)
     }
+
 }
