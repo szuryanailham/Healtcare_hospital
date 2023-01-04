@@ -6,11 +6,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.selfhealth_app.R
-import com.example.selfhealth_app.model.RumahSakitModel
+import com.example.selfhealth_app.model.HospitalModel
 
-class RumahSakitAdapter(
-    val rumahsakit: ArrayList<RumahSakitModel.Data>
-    ) :RecyclerView.Adapter<RumahSakitAdapter.ViewHolder>() {
+class HospitalAdapter(
+    val rumahsakit: ArrayList<HospitalModel.Data>
+    ) :RecyclerView.Adapter<HospitalAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(
         LayoutInflater.from(parent.context)
@@ -32,10 +32,9 @@ class RumahSakitAdapter(
         val textKota = view.findViewById<TextView>(R.id.text_kota)
     }
 
-    public fun setData(data: List<RumahSakitModel.Data>) {
+    public fun setData(data: List<HospitalModel.Data>) {
         rumahsakit.clear()
         rumahsakit.addAll(data)
         notifyDataSetChanged()
-
     }
 }
