@@ -13,10 +13,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/text_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="3dp"
@@ -26,7 +27,7 @@
             android:textColor="@color/black"
             tools:text="@string/hospital_name" />
         <TextView
-            android:id="@+id/tv_detail"
+            android:id="@+id/text_alamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
@@ -35,7 +36,7 @@
             android:maxLines="2"
             tools:text="@string/detail" />
         <TextView
-            android:id="@+id/tv_city"
+            android:id="@+id/text_kota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
