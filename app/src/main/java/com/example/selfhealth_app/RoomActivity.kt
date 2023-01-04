@@ -1,11 +1,13 @@
 package com.example.selfhealth_app
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import com.example.selfhealth_app.adapter.RoomAdapter
 import com.example.selfhealth_app.model.RoomModel
+import kotlinx.android.synthetic.main.activity_room.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -20,6 +22,16 @@ class RoomActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room)
         setupList()
+
+        patientReg.setOnClickListener() {
+            Intent(this, RegistrationPatientActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        buttonBack.setOnClickListener(){
+            finish()
+        }
     }
 
     override fun onStart() {

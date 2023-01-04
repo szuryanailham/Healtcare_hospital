@@ -5,13 +5,86 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/whiteHealth"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/nama_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Self Health"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/blueHealth"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/darkHealth"
+            android:fontFamily="@font/poppins_medium"/>
+
+    </LinearLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list_hospital"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="3"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/adapter_hospitals" />
+        tools:listitem="@layout/adapter_hospitals"
+        />
+
+    <Button
+        android:id="@+id/buttonLokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hospital Location"
+        android:background="@drawable/rounded_bg_blue"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp" />
+
+
+    <Button
+        android:id="@+id/buttonKamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a room"
+        android:background="@drawable/rounded_bg_blue"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/redHealth"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"/>
 
 </LinearLayout>

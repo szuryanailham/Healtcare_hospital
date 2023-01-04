@@ -12,4 +12,5 @@
     <color name="whiteHealth">#EAEEF2</color>
     <color name="grayHealth">#E1E4EA</color>
     <color name="darkHealth">#4C525A</color>
+    <color name="redHealth">#850000</color>
 </resources>
