@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun getRumahSakit() {
         api.data_rumahsakit().enqueue(object : Callback<RumahSakitModel> {
+            override fun onFailure(call: Call<RumahSakitModel>, t: Throwable) {
+                Log.e("MainActivity", t.toString())
+            }
+
             override fun onResponse(
                 call: Call<RumahSakitModel>,
                 response: Response<RumahSakitModel>
@@ -45,9 +49,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            override fun onFailure(call: Call<RumahSakitModel>, t: Throwable) {
-                Log.e("MainActivity", t.toString())
-            }
+
 
         })
     }
