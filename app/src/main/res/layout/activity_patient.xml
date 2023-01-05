@@ -23,7 +23,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Self Health"
-            app:layout_constraintTop_toTopOf="parent"
             android:textColor="@color/blueHealth"
             android:textSize="20dp"
             android:fontFamily="@font/poppins_semibold"/>
@@ -32,14 +31,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Get the best service"
-            app:layout_constraintTop_toTopOf="parent"
             android:textColor="@color/darkHealth"
             android:fontFamily="@font/poppins_medium"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Room Data"
+            android:text="Patient Data"
             app:layout_constraintTop_toTopOf="parent"
             android:textColor="@color/darkHealth"
             android:fontFamily="@font/poppins_medium"/>
@@ -48,12 +46,12 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_room"
+        android:id="@+id/list_patient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:itemCount="3"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/adapter_room" />
+        tools:listitem="@layout/adapter_patient" />
 
     <Button
         android:id="@+id/patientReg"
@@ -64,23 +62,7 @@
         android:textColor="@color/whiteHealth"
         android:background="@drawable/rounded_bg_blue"
         android:fontFamily="@font/poppins_medium"
-        android:textStyle="bold"
         android:layout_marginTop="15dp"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginBottom="5dp"
-        android:padding="15dp" />
-
-    <Button
-        android:id="@+id/patientData"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Patient Data"
-        android:elevation="5dp"
-        android:textColor="@color/whiteHealth"
-        android:background="@drawable/rounded_bg_blue"
-        android:fontFamily="@font/poppins_medium"
-        android:textStyle="bold"
-        android:layout_marginTop="5dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginBottom="5dp"
         android:padding="15dp" />
