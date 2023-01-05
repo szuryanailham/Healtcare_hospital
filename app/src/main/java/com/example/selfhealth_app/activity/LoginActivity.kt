@@ -1,9 +1,10 @@
-package com.example.selfhealth_app
+package com.example.selfhealth_app.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.selfhealth_app.R
 import com.example.selfhealth_app.helper.Constant
 import com.example.selfhealth_app.helper.PreferencesHelper
 import kotlinx.android.synthetic.main.activity_login.*

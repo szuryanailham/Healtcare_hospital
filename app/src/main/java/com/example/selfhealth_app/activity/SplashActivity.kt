@@ -1,4 +1,4 @@
-package com.example.selfhealth_app
+package com.example.selfhealth_app.activity
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
+import com.example.selfhealth_app.R
 
 
 @SuppressLint("CustomSplashScreen")

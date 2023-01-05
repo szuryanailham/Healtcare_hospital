@@ -1,4 +1,4 @@
-package com.example.selfhealth_app
+package com.example.selfhealth_app.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

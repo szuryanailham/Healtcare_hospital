@@ -1,4 +1,4 @@
-package com.example.selfhealth_app
+package com.example.selfhealth_app.api
 
 import com.example.selfhealth_app.model.HospitalModel
 import com.example.selfhealth_app.model.RoomModel
@@ -12,4 +12,6 @@ interface ApiEndpoint {
 
     @GET("data_kamar.php")
     fun data_kamar() : Call<RoomModel>
+
+
 }
