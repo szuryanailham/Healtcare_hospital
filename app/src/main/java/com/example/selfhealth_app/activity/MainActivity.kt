@@ -1,12 +1,13 @@
-package com.example.selfhealth_app
+package com.example.selfhealth_app.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.selfhealth_app.api.ApiRetrofit
+import com.example.selfhealth_app.R
 import com.example.selfhealth_app.adapter.HospitalAdapter
 import com.example.selfhealth_app.helper.Constant
 import com.example.selfhealth_app.helper.PreferencesHelper

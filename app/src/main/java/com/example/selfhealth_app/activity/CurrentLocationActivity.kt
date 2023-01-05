@@ -1,4 +1,4 @@
-package com.example.selfhealth_app
+package com.example.selfhealth_app.activity
 
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import com.example.selfhealth_app.R
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 

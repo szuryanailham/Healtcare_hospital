@@ -1,4 +1,4 @@
-package com.example.selfhealth_app
+package com.example.selfhealth_app.api
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
