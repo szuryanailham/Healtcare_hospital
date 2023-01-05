@@ -37,6 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         setupList()
 
+        buttonLokasi.setOnClickListener() {
+            Intent(this, MapsActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
         buttonKamar.setOnClickListener(){
             Intent(this, RoomActivity::class.java).also {
                 startActivity(it)

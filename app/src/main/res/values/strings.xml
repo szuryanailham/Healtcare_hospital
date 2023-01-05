@@ -18,4 +18,5 @@
     <string name="hospital_name">Nama Rumah Sakit</string>
     <string name="detail">Alamat</string>
     <string name="city">Kota</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
