@@ -63,7 +63,32 @@ class EditPatientActivity : AppCompatActivity() {
         }
 
         buttonUpdate.setOnClickListener() {
+            api.update(
+                pasien.id!!,
+                editNo.text.toString(),
+                editName.text.toString(),
+                editBorn.text.toString(),
+                editGender.text.toString(),
+                editAddress.text.toString(),
+                editComplaint.text.toString(),
+                editRoom.text.toString()
+            )
+                .enqueue(object: Callback<SubmitModel> {
+                    override fun onResponse(
+                        call: Call<SubmitModel>,
+                        response: Response<SubmitModel>
+                    ) {
+                        if (response.isSuccessful) {
+                            Toast.makeText(applicationContext, "Successful", Toast.LENGTH_SHORT).show()
+                            finish()
+                        }
+                    }
 
+                    override fun onFailure(call: Call<SubmitModel>, t: Throwable) {
+                        TODO("Not yet implemented")
+                    }
+
+                })
         }
     }
 }

@@ -71,7 +71,6 @@ class RegistrationPatientActivity : AppCompatActivity() {
                     override fun onResponse( call: Call<SubmitModel>, response: Response<SubmitModel>
                     ) {
                         if (response.isSuccessful) {
-                            val submit = response.body()
                             Toast.makeText(applicationContext, "Successful", Toast.LENGTH_SHORT).show()
                             finish()
                         }

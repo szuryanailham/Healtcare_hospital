@@ -33,5 +33,18 @@ interface ApiEndpoint {
         @Field("kamar") room: String,
     ) : Call<SubmitModel>
 
+    @FormUrlEncoded
+    @POST("update_pasien.php")
+    fun update(
+        @Field("id") id: String,
+        @Field("no_pasien") number: String,
+        @Field("nama") name: String,
+        @Field("ttl") born: String,
+        @Field("jenis_kelamin") gender: String,
+        @Field("alamat") address: String,
+        @Field("keluhan") complaint: String,
+        @Field("kamar") room: String,
+    ) : Call<SubmitModel>
+
 
 }
