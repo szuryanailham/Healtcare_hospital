@@ -3,6 +3,7 @@ package com.example.selfhealth_app.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.selfhealth_app.R
@@ -25,7 +26,11 @@ class PatientAdapter (
         holder.kamarPasien.text = data.kamar
 
         holder.itemView.setOnClickListener() {
-            listener.onClick(data)
+            listener.onUpdate(data)
+        }
+
+        holder.imageDelete.setOnClickListener() {
+            listener.onDelete(data)
         }
     }
 
@@ -35,6 +40,7 @@ class PatientAdapter (
         val namaPasien = view.findViewById<TextView>(R.id.nama_pasien)
         val alamatPasien = view.findViewById<TextView>(R.id.alamat_pasien)
         val kamarPasien = view.findViewById<TextView>(R.id.kamar_pasien)
+        val imageDelete = view.findViewById<ImageView>(R.id.image_delete)
     }
 
     public fun setData(data: List<PatientModel.Data>) {
@@ -44,7 +50,8 @@ class PatientAdapter (
     }
 
     interface OnAdapterListener {
-        fun onClick(pasien: PatientModel.Data)
+        fun onUpdate(pasien: PatientModel.Data)
+        fun onDelete(pasien: PatientModel.Data)
     }
 
 

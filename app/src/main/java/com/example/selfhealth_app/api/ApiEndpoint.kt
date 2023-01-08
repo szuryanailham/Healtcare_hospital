@@ -46,5 +46,11 @@ interface ApiEndpoint {
         @Field("kamar") room: String,
     ) : Call<SubmitModel>
 
+    @FormUrlEncoded
+    @POST("delete_pasien.php")
+    fun delete(
+        @Field("id") id: String
+    ) : Call<SubmitModel>
+
 
 }
