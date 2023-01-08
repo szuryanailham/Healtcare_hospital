@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/rounded_bg"
@@ -11,31 +11,51 @@
     android:layout_marginHorizontal="15dp"
     android:layout_marginVertical="5dp">
 
-    <TextView
-        android:id="@+id/nama_pasien"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/poppins_medium"
-        tools:text="nama pasien"/>
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/alamat_pasien"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:fontFamily="@font/poppins"
-        tools:text="alamat"/>
+        <TextView
+            android:id="@+id/nama_pasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            tools:text="nama pasien"/>
 
-    <TextView
-        android:id="@+id/kamar_pasien"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/alamat_pasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            tools:text="alamat"/>
+
+        <TextView
+            android:id="@+id/kamar_pasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            tools:text="kamar"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:fontFamily="@font/poppins"
-        tools:text="kamar"/>
+        android:src="@drawable/ic_delete"
+        android:layout_gravity="center"
+        />
+
 
 
 </LinearLayout>
