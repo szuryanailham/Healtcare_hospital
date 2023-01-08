@@ -60,6 +60,20 @@
             android:fontFamily="@font/poppins_semibold"/>
 
         <EditText
+            android:id="@+id/no"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="Patient Number"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkHealth"
+            android:background="@drawable/rounded_bg_gray"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="60dp"
