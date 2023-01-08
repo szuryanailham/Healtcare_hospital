@@ -60,7 +60,7 @@
             android:fontFamily="@font/poppins_semibold"/>
 
         <EditText
-            android:id="@+id/no"
+            android:id="@+id/editNo"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
@@ -74,7 +74,7 @@
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/editName"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
@@ -88,7 +88,7 @@
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/born"
+            android:id="@+id/editBorn"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
@@ -102,7 +102,7 @@
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/gender"
+            android:id="@+id/editGender"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
@@ -116,7 +116,7 @@
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/address"
+            android:id="@+id/editAddress"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
@@ -130,7 +130,7 @@
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/complaint"
+            android:id="@+id/editComplaint"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
@@ -144,7 +144,7 @@
             android:fontFamily="@font/poppins"/>
 
         <EditText
-            android:id="@+id/room"
+            android:id="@+id/editRoom"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
@@ -160,10 +160,10 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/send"
+        android:id="@+id/update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SEND"
+        android:text="UPDATE"
         android:elevation="5dp"
         android:textSize="15sp"
         android:textColor="@color/whiteHealth"

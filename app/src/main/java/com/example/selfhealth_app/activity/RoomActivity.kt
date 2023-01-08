@@ -31,6 +31,12 @@ class RoomActivity : AppCompatActivity() {
             }
         }
 
+        patientData.setOnClickListener() {
+            Intent(this, PatientActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
         buttonBack.setOnClickListener(){
             finish()
         }
