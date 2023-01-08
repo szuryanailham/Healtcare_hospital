@@ -1,5 +1,7 @@
 package com.example.selfhealth_app.model
 
+import java.io.Serializable
+
 data class PatientModel (val pasien: List<Data>) {
     data class Data (
             val id: String?,
@@ -10,5 +12,5 @@ data class PatientModel (val pasien: List<Data>) {
             val alamat: String?,
             val keluhan: String?,
             val kamar: String?
-            )
+            ) : Serializable
 }

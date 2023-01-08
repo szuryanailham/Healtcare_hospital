@@ -9,7 +9,8 @@ import com.example.selfhealth_app.R
 import com.example.selfhealth_app.model.PatientModel
 
 class PatientAdapter (
-    val pasien: ArrayList<PatientModel.Data>
+    val pasien: ArrayList<PatientModel.Data>,
+    val listener: OnAdapterListener,
         ) :RecyclerView.Adapter<PatientAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(
@@ -22,6 +23,10 @@ class PatientAdapter (
         holder.namaPasien.text = data.nama
         holder.alamatPasien.text = data.alamat
         holder.kamarPasien.text = data.kamar
+
+        holder.itemView.setOnClickListener() {
+            listener.onClick(data)
+        }
     }
 
     override fun getItemCount() = pasien.size
@@ -36,6 +41,10 @@ class PatientAdapter (
         pasien.clear()
         pasien.addAll(data)
         notifyDataSetChanged()
+    }
+
+    interface OnAdapterListener {
+        fun onClick(pasien: PatientModel.Data)
     }
 
 

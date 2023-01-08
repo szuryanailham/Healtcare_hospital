@@ -72,7 +72,7 @@ class RegistrationPatientActivity : AppCompatActivity() {
                     ) {
                         if (response.isSuccessful) {
                             val submit = response.body()
-                            Toast.makeText(applicationContext, submit!!.message, Toast.LENGTH_SHORT).show()
+                            Toast.makeText(applicationContext, "Successful", Toast.LENGTH_SHORT).show()
                             finish()
                         }
                     }

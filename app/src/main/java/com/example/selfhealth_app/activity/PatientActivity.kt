@@ -43,7 +43,14 @@ class PatientActivity : AppCompatActivity() {
 
     private fun setupList() {
         listPasien = findViewById(R.id.list_patient)
-        patientAdapter = PatientAdapter(arrayListOf())
+        patientAdapter = PatientAdapter(arrayListOf(), object : PatientAdapter.OnAdapterListener{
+            override fun onClick(pasien: PatientModel.Data) {
+                startActivity(Intent(this@PatientActivity, EditPatientActivity::class.java)
+                    .putExtra("pasien", pasien)
+                )
+            }
+
+        })
         listPasien.adapter = patientAdapter
     }
 
