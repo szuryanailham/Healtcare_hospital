@@ -7,12 +7,12 @@
     android:background="@color/blueHealth">
 
     <ImageView
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:backgroundTint="#FFFFFF"
         android:scaleType="centerCrop"
-        android:src="@drawable/self_health"/>
+        android:src="@drawable/logo1"/>
 
 </RelativeLayout>

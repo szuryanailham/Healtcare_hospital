@@ -22,7 +22,7 @@
             android:id="@+id/nama_rs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Self Health"
+            android:text="Health care"
             app:layout_constraintTop_toTopOf="parent"
             android:textColor="@color/blueHealth"
             android:textSize="20dp"
